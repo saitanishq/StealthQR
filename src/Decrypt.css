@@ -1,0 +1,87 @@
+.decrypt-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.decrypt-container button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #61dafb;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.decrypt-container button:hover {
+    background-color: #5aa9e6;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(10, 11, 13, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.Modal {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 80%;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.data-field {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.close-icon {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.error {
+    color: red;
+    margin-top: 20px;
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button-group button {
+    flex: 1;
+    /* Equal width */
+    transition: background-color 0.3s ease;
+}
+
+/* Highlight the active button */
+.button-active {
+    background-color: #4090db;
+    /* Darker shade when selected */
+}

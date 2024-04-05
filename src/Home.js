@@ -1,14 +1,9 @@
 // Home.js
 import React, { useState, useEffect } from 'react';
-import backgroundVideo from './background.mp4';
+import backgroundVideo from './Toll-plaza.mp4';
 
 const styles = {
   
-subTitle: {
-    color: '#333',
-    fontSize: '1.5rem',
-    margin: '1rem 0',
-  },
   header: {
     display: 'flex', // Enable flexbox
     flexDirection: 'column', // Stack children vertically
@@ -20,7 +15,7 @@ subTitle: {
   },
   mainTitle: {
     // ... other mainTitle styles remain unchanged
-    color: '#333',
+    color: 'whit',
     fontSize: '2.5rem',
     fontWeight: 'bold',
   },
@@ -54,7 +49,7 @@ subTitle: {
 
 const Home = () => {
     const [typedText, setTypedText] = useState('');
-  const fullText = `"vUnlock the potential of VOC's"`;
+  const fullText = `"vUnlock the potential of QR's"`;
 
   useEffect(() => {
     let index = 0;
@@ -74,7 +69,7 @@ const Home = () => {
     Your browser does not support the video tag.
   </video>
     <header style={styles.header}>
-      <h1 style={styles.mainTitle}>Pioneering Olfaction Diagnostics</h1>
+      <h1 style={styles.mainTitle}>StealthQR</h1>
       <b><p style={styles.subTitle}>{typedText}</p></b>
       <button style={styles.connectButton}>CONNECT WITH US</button>
     </header>

@@ -5,6 +5,8 @@ import Team from './Team.js';
 import Home from './Home.js';
 import Project from './Project.js';
 import Journey from './Journey.js';
+import Encrypt from './Encrypt.js';
+import Decrypt from './Decrypt.js';
 
 const styles = {
 navbar: {
@@ -43,9 +45,10 @@ const App = () => {
         <Link style={styles.navItem} to="/Home">Home</Link>
         <Link style={styles.navItem} to="/Project">Our Project</Link>
         <Link style={styles.navItem} to="/Team">Team</Link>
-        <Link style={styles.navItem} to="/Journey">The Journey</Link>
+        <Link style={styles.navItem} to="/Encrypt">Encrypt</Link>
+        <Link style={styles.navItem} to="/Decrypt">Decrypt</Link>
         <Link style={styles.navItem} to="#" onClick={(e) => {
-        window.location.href = 'mailto:revivesense2023@gmail.com';
+        window.location.href = 'mailto:salapat@iu.edu';
          e.preventDefault();}}>Contact Us</Link>
       </nav>
       
@@ -55,7 +58,8 @@ const App = () => {
         <Route path="/Home" element={<Home />} /> 
         <Route path="/Project" element={<Project />} /> 
         <Route path="/Team" element={<Team />} />
-        <Route path="/Journey" element={<Journey />} />
+        <Route path="/Encrypt" element={<Encrypt />} />
+        <Route path="/Decrypt" element={<Decrypt />} />
         {/* Define other routes here */}
       </Routes>
     </div>

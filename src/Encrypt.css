@@ -1,0 +1,136 @@
+.encrypt-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.encrypt-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.encrypt-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 250px;
+}
+.encrypt-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 250px;
+}
+
+.encrypt-form button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #61dafb;
+    color: white;
+    cursor: pointer;
+}
+
+.encrypt-form button:hover {
+    background-color: #5aa9e6;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(10, 11, 13, 0.8);
+    /* Dark translucent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    /* Blurring the background content */
+}
+/*
+.Modal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+    max-width: 600px;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+*/
+
+.Modal {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 80%;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    /* Fixed position */
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust to exact center */
+    z-index: 1000;
+    /* Ensure it's on top of other content */
+}
+.qr-container {
+    border: 5px solid #f1f1f1;
+    /* Light grey border */
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    /* Space between QR code and download button */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Style for download button */
+.download-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #61dafb;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.download-button:hover {
+    background-color: #5aa9e6;
+}
+
+.close-icon {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
