@@ -15,12 +15,12 @@ const styles = {
   },
   mainTitle: {
     // ... other mainTitle styles remain unchanged
-    color: 'whit',
+    color: '#ffffff',
     fontSize: '2.5rem',
     fontWeight: 'bold',
   },
   subTitle: {
-    color: '#333',
+    color: '#ffffff',
     fontSize: '1.5rem',
     margin: '1rem 0',// ... other subTitle styles remain unchanged
     visibility: 'visible', // Make sure the subtitle is visible
@@ -49,7 +49,7 @@ const styles = {
 
 const Home = () => {
     const [typedText, setTypedText] = useState('');
-  const fullText = `"vUnlock the potential of QR's"`;
+  const fullText = `"Unlock the potential of QR's"`;
 
   useEffect(() => {
     let index = 0;

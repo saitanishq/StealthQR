@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import { motion } from 'framer-motion';
-import { IoClose } from 'react-icons/io5';
+import { IoClose } from 'react-icons/io';
 import './Project.css';
 
 Modal.setAppElement('#root');
