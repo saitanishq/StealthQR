@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useForm } from 'react-hook-form';
-import QRCode  from 'qrcode.react';
+import QRCode  from 'react-qr-code';
 import CryptoJS from 'crypto-js';
 import Modal from 'react-modal';
 import { IoMdClose } from 'react-icons/io';
