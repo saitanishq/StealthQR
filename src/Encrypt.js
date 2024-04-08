@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import QRCode  from 'react-qr-code';
 import CryptoJS from 'crypto-js';
 import Modal from 'react-modal';
-import { IoMdClose } from 'react-icons/io';
+import { IoClose } from 'react-icons/io5';
 import './Encrypt.css';
 
 Modal.setAppElement('#root');
