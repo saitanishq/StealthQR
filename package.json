@@ -43,9 +43,4 @@
       "last 1 safari version"
     ]
   }
-  "overrides": {
-  "qrcode.react": {
-    "react": "^18.2.0"
-  }
-}
 }
